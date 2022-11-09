@@ -1,1 +1,145 @@
 @import 'reset.css';
+
+/* <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+</style> */
+html{
+    --primary-color: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%)
+}
+body {
+    background-color:  var(--light-grayish-cyan);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.formInputs{
+    font-size: 24px;
+    padding-left: 50px;
+}
+.title{
+    letter-spacing: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--dark-grayish-cyan);
+    text-align: center;
+}
+
+.backgroundBox{
+    background-color: var(--white);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.tipContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.secDesc {
+    color: var(--dark-grayish-cyan);
+    margin-bottom: 5px;
+}
+.onePair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-light-grayish-cyan);
+    border-radius: 5px;
+}
+.selectTip {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+}
+.numOfPoeple{
+    margin-top: 2rem;
+    margin-bottom: 0.3rem;
+}
+.btn{
+    color: var(--very-light-grayish-cyan);
+    background-color: var(--very-dark-cyan);
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    padding: 0.3rem 0;
+    line-height: normal;
+}
+
+.resultsContainer {
+    background-color: var(--very-dark-cyan);
+    border-radius: 15px;
+    padding: 2rem 1.2rem 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+}
+.resultsContainerTitle{
+    color: var(--white);
+    margin-bottom: 0;
+}
+.resetBtn {
+    text-transform: uppercase;
+    font-weight: 700;
+    grid-column: 1 / span 2;
+    background-color: hsla(172, 67%, 45%, 40%);
+    color: rgb(0,0,0,0.1);
+    font-size: 20px;
+}
+.person {
+    color: var(--grayish-cyan);
+}
+.money {
+    text-align: right;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 0;
+    color: var(--primary-color);
+}
+.inputField{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    background-color: var(--very-light-grayish-cyan);
+    border: none;
+    width: 100%;
+    text-align: right;
+    color: var(--very-dark-cyan);
+    line-height: 1;
+    padding: 0.2rem 1rem;
+    font-size: 24px;
+    border-radius: 5px;
+}
+.imgContainer{
+    background-color: var(--very-light-grayish-cyan);
+    height: 24px;
+}
+.paddingForPair{
+    padding-left: 1rem;
+}
+
+.inputField::placeholder{
+    color: var(--very-dark-cyan);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+.inputCustomPercent {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: var(--dark-grayish-cyan);
+}
+.inputCustomPercent::placeholder{
+    color: var(--dark-grayish-cyan);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+/* @media screen and (min-width: 1440px) {
+    
+} */
