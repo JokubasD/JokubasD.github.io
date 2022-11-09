@@ -5,22 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Sveiki atvyke</h1>
-    <h2>Pasirinkite tema</h2>
-    <div class="list-group">
-      <a href="./todo/index.html" class="list-group-item list-group-item-action">TodoApp</a>
+  <h1 class="title">SPLI<br>TTER</h1>
+  <div class="container backgroundBox">
+    <div>
+      <p class="secDesc">Bill</p>
+      <div class="onePair">
+        <div class="paddingForPair">
+          <div class="imgContainer">
+            <img src="./images/icon-dollar.svg" alt="" class="icon">
+          </div>
+        </div>
+        <input type="text" id="inputBill" placeholder="0" class="inputField">
+      </div>
+
+      <p class="secDesc selectTip">Select Tip %</p>
+      <div class="tipContainer">
+        <button class="btn">5%</button>
+        <button class="btn">10%</button>
+        <button class="btn btn-secondary">15%</button>
+        <button class="btn">25%</button>
+        <button class="btn">50%</button>
+        <input type="text" id="inputCustomPercent" placeholder="Custom" class="inputField inputCustomPercent">
+      </div>
+      <p class="secDesc numOfPoeple">Number of People</p>
+      <div class="onePair">
+        <div class="paddingForPair">
+          <div class="imgContainer">
+            <img src="./images/icon-person.svg" alt="" class="icon">
+          </div>
+        </div>
+        <input type="text" id="inputPeople" placeholder="0" class="inputField">
+      </div>
     </div>
-  </div>
+    <div class="resultsContainer">
+      <div>
+        <p class="resultsContainerTitle">Tip Amount</p>
+        <h5 class="person">/ person</h5>
+      </div>
+      <h2 class="money">$0.00</h2>
+      <div>
+        <p class="resultsContainerTitle">Total</p>
+        <h5 class="person">/ person</h5>
+      </div>
+      <h2 class="money">$0.00</h2>
+      <button class="btn btn-secondary resetBtn">Reset</button>
+    </div>
+  </div>   
 </body>
 </html>
