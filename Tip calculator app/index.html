@@ -28,11 +28,11 @@
       <input type="text" id="inputBill" placeholder="0" class="inputField" step="1">
       <p class="secDesc selectTip">Select Tip %</p>
       <div class="tipContainer">
-        <button class="btn btnPercent" value="1.05">5%</button>
-        <button class="btn btnPercent" value="1.10">10%</button>
-        <button class="btn btnPercent" value="1.15">15%</button>
-        <button class="btn btnPercent" value="1.25">25%</button>
-        <button class="btn btnPercent" value="1.50">50%</button>
+        <button class="btn btnPercent" value="5">5%</button>
+        <button class="btn btnPercent" value="10">10%</button>
+        <button class="btn btnPercent" value="15">15%</button>
+        <button class="btn btnPercent" value="25">25%</button>
+        <button class="btn btnPercent" value="50">50%</button>
         <input type="text" id="inputCustomPercent" placeholder="Custom" class="inputField inputCustomPercent">
       </div>
       <div class="flexContainer">
@@ -53,7 +53,7 @@
         <h5 class="person">/ person</h5>
       </div>
       <h2 class="money mb" id="totalAmount">$0.00</h2>
-      <button class="btn btn-secondary resetBtn">Reset</button>
+      <button class="btn btn-secondary resetBtn resetBtnDisabled" disabled="true" id="resetBtn">Reset</button>
     </div>
   </div>   
 </body>
