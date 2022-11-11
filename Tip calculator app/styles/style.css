@@ -9,9 +9,12 @@ html{
     --very-dark-cyan: hsl(183, 100%, 15%);
     --dark-grayish-cyan: hsl(186, 14%, 43%);
     --grayish-cyan: hsl(184, 14%, 56%);
+    --baby-blue: hsl(186, 44%, 69%);
+    --darker-baby-blue: hsl(186, 40%, 51%);
     --light-grayish-cyan: hsl(185, 41%, 84%);
     --very-light-grayish-cyan: hsl(189, 41%, 97%);
-    --white: hsl(0, 0%, 100%)
+    --white: hsl(0, 0%, 100%);
+    --orange: #B56727
 }
 body {
     background-color:  var(--light-grayish-cyan);
@@ -47,20 +50,18 @@ body {
     color: var(--dark-grayish-cyan);
     margin-bottom: 5px;
 }
-.onePair{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--very-light-grayish-cyan);
-    border-radius: 5px;
-}
+
 .selectTip {
     margin-top: 2rem;
     margin-bottom: 0.8rem;
 }
 .numOfPoeple{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 0.3rem;
+}
+.input-icon{
+    position: absolute;
+    padding: 0.8rem;
 }
 .btn{
     color: var(--very-light-grayish-cyan);
@@ -73,7 +74,16 @@ body {
     padding: 0.3rem 0;
     line-height: normal;
 }
-
+.btnPercent:hover{
+    background-color: var(--baby-blue);
+    color: var(--very-dark-cyan);
+}
+.inputField:focus{
+    outline-color: var(--darker-baby-blue);
+}
+.inputCustomPercent:focus{
+    outline-color: var(--darker-baby-blue)
+}
 .resultsContainer {
     background-color: var(--very-dark-cyan);
     border-radius: 15px;
@@ -99,7 +109,7 @@ body {
 }
 .money {
     text-align: right;
-    font-size: 30px;
+    font-size: 34px;
     line-height: 1;
     margin-bottom: 0;
     color: var(--primary-color);
@@ -124,7 +134,10 @@ body {
 .paddingForPair{
     padding-left: 1rem;
 }
-
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+}
 .inputField::placeholder{
     color: var(--very-dark-cyan);
     font-family: 'Space Mono', monospace;
@@ -139,7 +152,57 @@ body {
     color: var(--dark-grayish-cyan);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
+    font-size: 24px;
 }
-/* @media screen and (min-width: 1440px) {
-    
-} */
+.activePercentBtn{
+    background-color: var(--primary-color);
+}
+.cantBeZero{
+    color: var(--orange);
+}
+.errorOutline{
+    border: 2px solid var(--orange);
+}
+.errorOutline:focus{
+    outline-color: var(--orange);
+}
+.errorOutline:active{
+    outline-color: var(--orange);
+}
+@media screen and (min-width: 1440px) {
+    .backgroundBox{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .tipContainer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.7rem;
+    }
+    .resultsContainer{
+        margin-top: 0;
+        padding: 2rem;
+    }
+    .title{
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+    }
+    .resetBtn{
+        height: 65%;
+        align-self: flex-end;
+    }
+    .h50{
+        height: 50%;
+    }
+    .mt{
+        margin-top: 1.3rem;
+    }
+    .mb{
+        margin-bottom: 1.3rem;
+    }
+    .money{
+        font-size: 40px;
+    }
+    .inputCustomPercent::placeholder{
+        font-size: 21px;
+    }
+}
