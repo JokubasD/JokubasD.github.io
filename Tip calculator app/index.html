@@ -1,60 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/style.css">
-  <script src="./Javascript/main.js" defer></script>
-  <title>Frontend Mentor | Tip calculator app</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <h1 class="title">SPLI<br>TTER</h1>
-  <div class="container backgroundBox">
-    <div>
-      <div class="flexContainer">
-        <p class="secDesc numOfPoeple">Bill</p>
-        <p class="secDesc numOfPoeple cantBeZero d-none" id="errorText1"></p>
-      </div> 
-      <img src="./images/icon-dollar.svg" alt="" class="input-icon">
-      <input type="text" id="inputBill" placeholder="0" class="inputField" step="1">
-      <p class="secDesc selectTip">Select Tip %</p>
-      <div class="tipContainer">
-        <button class="btn btnPercent" value="5">5%</button>
-        <button class="btn btnPercent" value="10">10%</button>
-        <button class="btn btnPercent" value="15">15%</button>
-        <button class="btn btnPercent" value="25">25%</button>
-        <button class="btn btnPercent" value="50">50%</button>
-        <input type="text" id="inputCustomPercent" placeholder="Custom" class="inputField inputCustomPercent">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./Javascript/main.js" defer></script>
+    <title>Frontend Mentor | Tip calculator app</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">SPLI<br />TTER</h1>
+    <div class="container backgroundBox">
+      <div>
+        <div class="flexContainer">
+          <p class="secDesc numOfPoeple">Bill</p>
+          <p class="secDesc numOfPoeple cantBeZero d-none" id="errorText1"></p>
+        </div>
+        <img src="./images/icon-dollar.svg" alt="" class="input-icon" />
+        <input
+          type="text"
+          id="inputBill"
+          placeholder="0"
+          class="inputField"
+          step="1"
+        />
+        <p class="secDesc selectTip">Select Tip %</p>
+        <div class="tipContainer">
+          <button class="btn btnPercent" value="5">5%</button>
+          <button class="btn btnPercent" value="10">10%</button>
+          <button class="btn btnPercent" value="15">15%</button>
+          <button class="btn btnPercent" value="25">25%</button>
+          <button class="btn btnPercent" value="50">50%</button>
+          <input
+            type="text"
+            id="inputCustomPercent"
+            placeholder="Custom"
+            class="inputField inputCustomPercent"
+          />
+        </div>
+        <div class="flexContainer">
+          <p class="secDesc numOfPoeple">Number of People</p>
+          <p class="secDesc numOfPoeple cantBeZero d-none" id="errorText2"></p>
+        </div>
+        <img src="./images/icon-person.svg" alt="" class="input-icon" />
+        <input
+          type="text"
+          id="inputPeople"
+          placeholder="0"
+          class="inputField"
+        />
       </div>
-      <div class="flexContainer">
-        <p class="secDesc numOfPoeple">Number of People</p>
-        <p class="secDesc numOfPoeple cantBeZero d-none" id="errorText2"></p>
-      </div> 
-      <img src="./images/icon-person.svg" alt="" class="input-icon">
-      <input type="text" id="inputPeople" placeholder="0" class="inputField">
+      <div class="resultsContainer">
+        <div class="h50 mt">
+          <p class="resultsContainerTitle">Tip Amount</p>
+          <h5 class="person">/ person</h5>
+        </div>
+        <h2 class="money mt" id="tipAmount">$0.00</h2>
+        <div class="h50 mb">
+          <p class="resultsContainerTitle">Total</p>
+          <h5 class="person">/ person</h5>
+        </div>
+        <h2 class="money mb" id="totalAmount">$0.00</h2>
+        <button
+          class="btn btn-secondary resetBtn resetBtnDisabled"
+          disabled="true"
+          id="resetBtn"
+        >
+          Reset
+        </button>
+      </div>
     </div>
-    <div class="resultsContainer">
-      <div class="h50  mt">
-        <p class="resultsContainerTitle">Tip Amount</p>
-        <h5 class="person">/ person</h5>
-      </div>
-      <h2 class="money mt" id="tipAmount">$0.00</h2>
-      <div class="h50 mb">
-        <p class="resultsContainerTitle">Total</p>
-        <h5 class="person">/ person</h5>
-      </div>
-      <h2 class="money mb" id="totalAmount">$0.00</h2>
-      <button class="btn btn-secondary resetBtn resetBtnDisabled" disabled="true" id="resetBtn">Reset</button>
-    </div>
-  </div>   
-</body>
+  </body>
 </html>
