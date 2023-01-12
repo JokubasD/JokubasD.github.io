@@ -1,25 +1,25 @@
 import { Link } from 'react-router-dom';
 import Heading5 from '../components/mainComponents/Heading5';
 import c from './Crew.module.css';
-function Crew1(props) {
+function Crew4(props) {
   return (
     <div className='container'>
       <Heading5>
         <span className={c.span}>02 </span> Meet your crew
       </Heading5>
       <img
-        src='/crew/image-douglas-hurley.png'
-        alt='Douglas Hurley'
+        src='/crew/image-anousheh-ansari.png'
+        alt='Anousheh Ansari'
         className={c.crewImage}
       />
       <ul className={c.control}>
         <Link
           to={'/crew/douglas-hurley'}
-          className={`${c.current} ${c.slider}`}
+          className={`${c.disabled} ${c.slider}`}
         />
         <Link
           to={'/crew/mark-shuttleworth'}
-          className={`${c.disabled} ${c.slider}`}
+          className={`${c.diabled} ${c.slider}`}
         />
         <Link
           to={'/crew/victor-glover'}
@@ -27,17 +27,17 @@ function Crew1(props) {
         />
         <Link
           to={'/crew/anousheh-ansari'}
-          className={`${c.disabled} ${c.slider}`}
+          className={`${c.current} ${c.slider}`}
         />
       </ul>
-      <h4 className={c.position}>Commander</h4>
-      <h3 className={c.name}>Douglas Hurley</h3>
+      <h4 className={c.position}>Flight Engineer</h4>
+      <h3 className={c.name}>Anousheh Ansari</h3>
       <p className={c.paragraph}>
-        Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
-        and former NASA astronaut. He launched into space for the third time as
-        commander of Crew Dragon Demo-2.
+        Anousheh Ansari is an Iranian American engineer and co-founder of Prodea
+        Systems. Ansari was the fourth self-funded space tourist, the first
+        self-funded woman to fly to the ISS, and the first Iranian in space.
       </p>
     </div>
   );
 }
-export default Crew1;
+export default Crew4;

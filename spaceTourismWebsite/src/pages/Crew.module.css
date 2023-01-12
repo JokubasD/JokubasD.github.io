@@ -2,6 +2,7 @@
   opacity: 0.25;
   margin-right: 8px;
 }
+
 .crewImage {
   width: 327px;
   height: 223px;
@@ -9,4 +10,57 @@
   border-bottom: 1px solid #383b4b;
   margin-top: 16px;
   margin-bottom: 32px;
+}
+.paragraph {
+  color: var(--light-blue);
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  padding: 0 24px;
+  margin-bottom: 0;
+}
+.name {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+}
+.position {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  opacity: 0.5;
+  mix-blend-mode: normal;
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+}
+.control {
+  margin-bottom: 32px;
+  margin-top: 0;
+  display: flex;
+  gap: 16px;
+  place-content: center;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.control .disabled {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 255, 255, 0.17);
+  mix-blend-mode: normal;
+  border-radius: 50%;
+}
+.control .current {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.control .slider:hover {
+  background-color: rgb(255, 255, 255, 0.5);
 }

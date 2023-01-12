@@ -59,11 +59,10 @@ p {
 /* New CSS */
 
 .background {
-  background-repeat: no-repeat;
+  object-fit: contain;
   margin: 0 auto;
-  max-width: 1440px;
-  background-image: url(../space-tourism-website-main/starter-code/assets/home/background-home-mobile.jpg);
-  padding-bottom: 48px;
+
+  position: absolute;
 }
 :root {
   --blue: #0b0d17;
@@ -74,6 +73,6 @@ p {
   text-align: center;
   font-weight: normal;
 }
-.destinationBackground {
-  background-image: url(../public/destination/background-destination-mobile.jpg);
+.main {
+  position: relative;
 }

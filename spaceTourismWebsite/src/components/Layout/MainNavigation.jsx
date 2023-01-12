@@ -23,7 +23,7 @@ const MainNavigation = () => {
             <Link to='/'>00 HOME</Link>
             <Link to='/destination/moon'>01 DESTINATION</Link>
             <Link to='/crew/douglas-hurley'>02 CREW</Link>
-            <Link to='/technology'>03 TECHNOLOGY</Link>
+            <Link to='/technology/launch-vehicle'>03 TECHNOLOGY</Link>
           </ul>
         )}
       </nav>

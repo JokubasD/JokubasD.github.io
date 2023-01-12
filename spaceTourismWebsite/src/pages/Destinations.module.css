@@ -27,6 +27,9 @@
   padding-bottom: 8px;
   color: var(--light-blue);
 }
+.ul li:hover {
+  border-bottom: 3px solid rgb(255, 255, 255, 0.5);
+}
 li.line {
   border-bottom: 3px solid white;
   color: white;
