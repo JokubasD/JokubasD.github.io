@@ -1,0 +1,57 @@
+.planet {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.ul {
+  display: flex;
+  gap: 26px;
+  place-content: center;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+.span {
+  opacity: 0.25;
+  margin-right: 8px;
+}
+.ul li {
+  text-transform: uppercase;
+  letter-spacing: 2.3625px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Barlow Condensed', sans-serif;
+  padding-bottom: 8px;
+  color: var(--light-blue);
+}
+li.line {
+  border-bottom: 3px solid white;
+  color: white;
+}
+.hl {
+  height: 1px;
+  background: #383b4b;
+  margin: 0 24px;
+  margin-bottom: 32px;
+}
+.desc {
+  margin-bottom: 32px;
+}
+.paragraph {
+  color: var(--light-blue);
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  padding: 0 24px;
+  margin-bottom: 32px;
+}
+.travelDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 58px;
+}

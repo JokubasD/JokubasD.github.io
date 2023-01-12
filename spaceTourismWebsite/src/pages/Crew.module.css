@@ -1,0 +1,12 @@
+.span {
+  opacity: 0.25;
+  margin-right: 8px;
+}
+.crewImage {
+  width: 327px;
+  height: 223px;
+  object-fit: scale-down;
+  border-bottom: 1px solid #383b4b;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}

@@ -2,7 +2,7 @@ import MainNavigation from './MainNavigation';
 
 function Layout(props) {
   return (
-    <div className='background'>
+    <div>
       <MainNavigation />
       <main>{props.children}</main>
     </div>

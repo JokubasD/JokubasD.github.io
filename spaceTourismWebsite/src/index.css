@@ -63,9 +63,17 @@ p {
   margin: 0 auto;
   max-width: 1440px;
   background-image: url(../space-tourism-website-main/starter-code/assets/home/background-home-mobile.jpg);
+  padding-bottom: 48px;
 }
 :root {
   --blue: #0b0d17;
   --light-blue: #d0d6f9;
   --white: #fff;
+}
+.container {
+  text-align: center;
+  font-weight: normal;
+}
+.destinationBackground {
+  background-image: url(../public/destination/background-destination-mobile.jpg);
 }
