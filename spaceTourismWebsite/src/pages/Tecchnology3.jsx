@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
-import Heading5 from '../components/mainComponents/Heading5';
 import c from './Technology.module.css';
 function Technology3(props) {
   return (
     <div className='container'>
-      <Heading5>
+      <h5 className={c.heading5}>
         <span className={c.span}>03 </span> SPACE LAUNCH 101
-      </Heading5>
+      </h5>
       <img
         src='/technology/image-space-capsule-landscape.jpg'
         alt='Space Capsule'

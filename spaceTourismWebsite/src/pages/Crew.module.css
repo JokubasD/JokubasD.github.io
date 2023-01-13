@@ -8,8 +8,7 @@
   height: 223px;
   object-fit: scale-down;
   border-bottom: 1px solid #383b4b;
-  margin-top: 16px;
-  margin-bottom: 32px;
+  margin: 16px auto 32px auto;
 }
 .paragraph {
   color: var(--light-blue);
@@ -63,4 +62,56 @@
 }
 .control .slider:hover {
   background-color: rgb(255, 255, 255, 0.5);
+}
+.heading5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.7px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  gap: 0;
+}
+@media screen and (min-width: 768px) {
+  .heading5 {
+    margin: 40px 0 60px 38.5px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+  .flex {
+    flex-direction: column-reverse;
+  }
+  .crewImage {
+    height: 572px;
+    width: auto;
+    object-fit: scale-down;
+    margin-bottom: 0;
+    border-bottom: none;
+    margin-top: 0px;
+  }
+  .position {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .name {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .paragraph {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 155px;
+    margin-bottom: 40px;
+  }
+  .control {
+    margin-bottom: 40px;
+  }
 }

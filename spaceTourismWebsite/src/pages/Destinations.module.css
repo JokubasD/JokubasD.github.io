@@ -58,3 +58,57 @@ li.line {
   gap: 32px;
   padding-bottom: 58px;
 }
+.heading5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.7px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading5 {
+    margin: 40px 0 60px 38.5px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+  .planet {
+    width: 300px;
+    height: 300px;
+    margin-top: 0;
+    margin-bottom: 53px;
+  }
+  .ul {
+    gap: 36px;
+    margin: 0;
+  }
+  .ul li {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    padding-bottom: 12px;
+  }
+  .paragraph {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 98px;
+    margin-bottom: 49px;
+  }
+  .travelDetailsContainer {
+    flex-direction: row;
+    place-content: center;
+    gap: 90px;
+    padding-bottom: 62px;
+  }
+  .travelDetailsContainer div {
+    text-align: center;
+  }
+  .hl {
+    margin: 0 98px;
+    margin-bottom: 28px;
+  }
+}

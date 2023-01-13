@@ -21,10 +21,7 @@ function App() {
         path='/'
         exact
         element={
-          <Layout
-            imageSource='/home/background-home-mobile.jpg'
-            alt='Home background'
-          >
+          <Layout imageSource='/home/background-home' alt='Home background'>
             <HomePage />
           </Layout>
         }
@@ -34,7 +31,7 @@ function App() {
         exact
         element={
           <Layout
-            imageSource='/destination/background-destination-mobile.jpg'
+            imageSource='/destination/background-destination'
             alt='Destination Background'
           >
             <Destination />
@@ -46,7 +43,7 @@ function App() {
         exact
         element={
           <Layout
-            imageSource='/destination/background-destination-mobile.jpg'
+            imageSource='/destination/background-destination'
             alt='Destination Background'
           >
             <Destination2 />
@@ -58,7 +55,7 @@ function App() {
         exact
         element={
           <Layout
-            imageSource='/destination/background-destination-mobile.jpg'
+            imageSource='/destination/background-destination'
             alt='Destination Background'
           >
             <Destination3 />
@@ -70,7 +67,7 @@ function App() {
         exact
         element={
           <Layout
-            imageSource='/destination/background-destination-mobile.jpg'
+            imageSource='/destination/background-destination'
             alt='Destination Background'
           >
             <Destination4 />
@@ -81,10 +78,7 @@ function App() {
         path='/crew/douglas-hurley'
         exact
         element={
-          <Layout
-            imageSource='/crew/background-crew-mobile.jpg'
-            alt='Crew Background'
-          >
+          <Layout imageSource='/crew/background-crew' alt='Crew Background'>
             <Crew1 />
           </Layout>
         }
@@ -93,10 +87,7 @@ function App() {
         path='/crew/mark-shuttleworth'
         exact
         element={
-          <Layout
-            imageSource='/crew/background-crew-mobile.jpg'
-            alt='Crew Background'
-          >
+          <Layout imageSource='/crew/background-crew' alt='Crew Background'>
             <Crew2 />
           </Layout>
         }
@@ -105,10 +96,7 @@ function App() {
         path='/crew/victor-glover'
         exact
         element={
-          <Layout
-            imageSource='/crew/background-crew-mobile.jpg'
-            alt='Crew Background'
-          >
+          <Layout imageSource='/crew/background-crew' alt='Crew Background'>
             <Crew3 />
           </Layout>
         }
@@ -117,10 +105,7 @@ function App() {
         path='/crew/anousheh-ansari'
         exact
         element={
-          <Layout
-            imageSource='/crew/background-crew-mobile.jpg'
-            alt='Crew Background'
-          >
+          <Layout imageSource='/crew/background-crew' alt='Crew Background'>
             <Crew4 />
           </Layout>
         }
@@ -130,7 +115,7 @@ function App() {
         exact
         element={
           <Layout
-            imageSource='/technology/background-technology-mobile.jpg'
+            imageSource='/technology/background-technology'
             alt='Technology Background'
           >
             <Technology1 />
@@ -142,7 +127,7 @@ function App() {
         exact
         element={
           <Layout
-            imageSource='/technology/background-technology-mobile.jpg'
+            imageSource='/technology/background-technology'
             alt='Technology Background'
           >
             <Technology2 />
@@ -154,7 +139,7 @@ function App() {
         exact
         element={
           <Layout
-            imageSource='/technology/background-technology-mobile.jpg'
+            imageSource='/technology/background-technology'
             alt='Technology Background'
           >
             <Technology3 />

@@ -73,9 +73,42 @@
   line-height: 23px;
   letter-spacing: 1.25px;
   text-align: center;
-  transition: box-shadow 0.4s;
 }
 .link:hover {
   background-color: hsl(0deg 0% 100% / 10%);
   color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .heading5 {
+    margin-top: 106px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    margin-bottom: 24px;
+  }
+  .heading1 {
+    font-size: 150px;
+    line-height: 150px;
+    margin-bottom: 24px;
+  }
+  .paragraph {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 159px;
+    margin-bottom: 156px;
+  }
+  .link {
+    width: 242px;
+    height: 242px;
+    color: #0b0d17;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+  .heading2 {
+    margin-bottom: 8px;
+    margin-top: 32px;
+    font-size: 80px;
+    line-height: 92px;
+  }
 }
