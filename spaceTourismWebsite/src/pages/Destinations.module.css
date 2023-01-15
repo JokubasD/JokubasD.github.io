@@ -1,0 +1,114 @@
+.planet {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.ul {
+  display: flex;
+  gap: 26px;
+  place-content: center;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+.span {
+  opacity: 0.25;
+  margin-right: 8px;
+}
+.ul li {
+  text-transform: uppercase;
+  letter-spacing: 2.3625px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Barlow Condensed', sans-serif;
+  padding-bottom: 8px;
+  color: var(--light-blue);
+}
+.ul li:hover {
+  border-bottom: 3px solid rgb(255, 255, 255, 0.5);
+}
+li.line {
+  border-bottom: 3px solid white;
+  color: white;
+}
+.hl {
+  height: 1px;
+  background: #383b4b;
+  margin: 0 24px;
+  margin-bottom: 32px;
+}
+.desc {
+  margin-bottom: 32px;
+}
+.paragraph {
+  color: var(--light-blue);
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  padding: 0 24px;
+  margin-bottom: 32px;
+}
+.travelDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 58px;
+}
+.heading5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.7px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading5 {
+    margin: 40px 0 60px 38.5px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+  .planet {
+    width: 300px;
+    height: 300px;
+    margin-top: 0;
+    margin-bottom: 53px;
+  }
+  .ul {
+    gap: 36px;
+    margin: 0;
+  }
+  .ul li {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    padding-bottom: 12px;
+  }
+  .paragraph {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 98px;
+    margin-bottom: 49px;
+  }
+  .travelDetailsContainer {
+    flex-direction: row;
+    place-content: center;
+    gap: 90px;
+    padding-bottom: 62px;
+  }
+  .travelDetailsContainer div {
+    text-align: center;
+  }
+  .hl {
+    margin: 0 98px;
+    margin-bottom: 28px;
+  }
+}

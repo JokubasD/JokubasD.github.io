@@ -1,0 +1,130 @@
+.span {
+  opacity: 0.25;
+  margin-right: 8px;
+}
+.image {
+  margin-top: 16px;
+  margin-bottom: 34px;
+  height: 170px;
+}
+.control {
+  margin-bottom: 26px;
+  margin-top: 0;
+  display: flex;
+  gap: 16px;
+  place-content: center;
+  padding-left: 0;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  font-family: 'Bellefair', serif;
+}
+.control .disabled {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  mix-blend-mode: normal;
+  color: white;
+  border: 1px solid rgb(255, 255, 255, 0.25);
+}
+.control .disabled:hover {
+  border: 1px solid white;
+}
+.control .current:hover {
+  border: 1px solid black;
+}
+.control .current {
+  background-color: white;
+  color: #0b0d17;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+.paragraph {
+  color: var(--light-blue);
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  padding: 0 24px;
+  margin-bottom: 0;
+}
+.name {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+}
+.position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  font-family: 'Barlow Condensed', sans-serif;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+  color: var(--light-blue);
+}
+.heading5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.7px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading5 {
+    margin: 40px 0 60px 38.5px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+  .image {
+    margin-bottom: 56px;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+  }
+  .control {
+    margin-bottom: 44px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+  }
+  .control .disabled {
+    width: 60px;
+    height: 60px;
+  }
+  .control .current {
+    width: 60px;
+    height: 60px;
+  }
+  .paragraph {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 155px;
+    padding-bottom: 97px;
+  }
+  .name {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .position {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-bottom: 16px;
+  }
+}

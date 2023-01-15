@@ -1,0 +1,77 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+/* ACTUAL CSS */
+.logo {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+
+.navLinks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.highlight {
+  font-weight: 700;
+}
+.burgerNav {
+  position: absolute;
+  height: 100%;
+  width: 254px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.closeLogo {
+  margin: 34px 26.5px 65px 208.5px;
+}
+.horizontalNav {
+  display: none;
+}
+.horizontalNav {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  padding: 40px 48px;
+}
+.horizontalNav ul {
+  padding-left: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  font-family: 'Barlow Condensed', sans-serif;
+  display: flex;
+  place-content: center;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .horizontalNav {
+    display: block;
+  }
+  .mobileNav {
+    display: none;
+  }
+  .header {
+    padding: 0;
+    padding-left: 39px;
+  }
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+}
