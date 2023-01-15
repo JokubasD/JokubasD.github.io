@@ -21,7 +21,11 @@ function App() {
         path='/'
         exact
         element={
-          <Layout imageSource='/home/background-home' alt='Home background'>
+          <Layout
+            imageSource='/home/background-home'
+            alt='Home background'
+            currentTab='home'
+          >
             <HomePage />
           </Layout>
         }
@@ -33,6 +37,7 @@ function App() {
           <Layout
             imageSource='/destination/background-destination'
             alt='Destination Background'
+            currentTab='destination'
           >
             <Destination />
           </Layout>
@@ -45,6 +50,7 @@ function App() {
           <Layout
             imageSource='/destination/background-destination'
             alt='Destination Background'
+            currentTab='destination'
           >
             <Destination2 />
           </Layout>
@@ -57,6 +63,7 @@ function App() {
           <Layout
             imageSource='/destination/background-destination'
             alt='Destination Background'
+            currentTab='destination'
           >
             <Destination3 />
           </Layout>
@@ -69,6 +76,7 @@ function App() {
           <Layout
             imageSource='/destination/background-destination'
             alt='Destination Background'
+            currentTab='destination'
           >
             <Destination4 />
           </Layout>
@@ -78,7 +86,11 @@ function App() {
         path='/crew/douglas-hurley'
         exact
         element={
-          <Layout imageSource='/crew/background-crew' alt='Crew Background'>
+          <Layout
+            imageSource='/crew/background-crew'
+            alt='Crew Background'
+            currentTab='crew'
+          >
             <Crew1 />
           </Layout>
         }
@@ -87,7 +99,11 @@ function App() {
         path='/crew/mark-shuttleworth'
         exact
         element={
-          <Layout imageSource='/crew/background-crew' alt='Crew Background'>
+          <Layout
+            imageSource='/crew/background-crew'
+            alt='Crew Background'
+            currentTab='crew'
+          >
             <Crew2 />
           </Layout>
         }
@@ -96,7 +112,11 @@ function App() {
         path='/crew/victor-glover'
         exact
         element={
-          <Layout imageSource='/crew/background-crew' alt='Crew Background'>
+          <Layout
+            imageSource='/crew/background-crew'
+            alt='Crew Background'
+            currentTab='crew'
+          >
             <Crew3 />
           </Layout>
         }
@@ -105,7 +125,11 @@ function App() {
         path='/crew/anousheh-ansari'
         exact
         element={
-          <Layout imageSource='/crew/background-crew' alt='Crew Background'>
+          <Layout
+            imageSource='/crew/background-crew'
+            alt='Crew Background'
+            currentTab='crew'
+          >
             <Crew4 />
           </Layout>
         }
@@ -117,6 +141,7 @@ function App() {
           <Layout
             imageSource='/technology/background-technology'
             alt='Technology Background'
+            currentTab='technology'
           >
             <Technology1 />
           </Layout>
@@ -129,6 +154,7 @@ function App() {
           <Layout
             imageSource='/technology/background-technology'
             alt='Technology Background'
+            currentTab='technology'
           >
             <Technology2 />
           </Layout>
@@ -141,6 +167,7 @@ function App() {
           <Layout
             imageSource='/technology/background-technology'
             alt='Technology Background'
+            currentTab='technology'
           >
             <Technology3 />
           </Layout>
