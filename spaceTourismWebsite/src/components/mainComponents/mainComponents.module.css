@@ -112,3 +112,35 @@
     line-height: 92px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .heading5 {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    margin-top: 0;
+  }
+  .heading1 {
+    font-size: 150px;
+    line-height: 172px;
+  }
+  .paragraph {
+    font-size: 18px;
+    line-height: 32px;
+    padding: 0;
+    margin-bottom: 0;
+    text-align: start;
+  }
+  .link {
+    width: 274px;
+    height: 274px;
+    align-self: flex-end;
+    margin-left: 386px;
+  }
+  .heading2 {
+    margin-bottom: 14px;
+    margin-top: 37px;
+    font-size: 100px;
+    line-height: 115px;
+    text-align: left;
+  }
+}

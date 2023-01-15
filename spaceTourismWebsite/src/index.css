@@ -75,5 +75,32 @@ p {
 }
 .main {
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.customBackground {
   height: 100vh;
+}
+.currentTab {
+  border-bottom: 3px solid white;
+}
+@media screen and (min-width: 768px) {
+  .background {
+    height: 120vh;
+  }
+  .customBackground {
+    height: 140vh;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .containerHome {
+    display: flex;
+  }
+  .textContainer {
+    width: 450px;
+    margin: 241px 0 0 165px;
+  }
+  .customBackground {
+    height: 110vh;
+  }
 }
